@@ -59,6 +59,7 @@ const Prismics = () => {
         transition={{ daration: 0.5, delay: 0.3 }}
         className="w-11/12 max-w-9xl text-center mx-auto mt-20"
       >
+        
         <SliceZone slices={data.data.slices} components={components} />
       </motion.div>
 
