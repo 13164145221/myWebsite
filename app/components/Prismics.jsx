@@ -8,18 +8,27 @@ import { motion } from "motion/react";
 const Prismics = () => {
   const client = createClient();
   const [data, setData] = useState(null);
+  const [rightData, setRightData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const json = await client
         .getByUID("page", "myfirstpage")
         .catch(() => notFound());
+
+      const jsonRight = await client
+        .getByUID("page", "rightanimation")
+        .catch(() => notFound());
+
+      setRightData(jsonRight);
+
       setData(json);
     };
     fetchData();
   }, []);
 
   if (!data) return null;
+  if (!rightData) return null;
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,15 +51,32 @@ const Prismics = () => {
         transition={{ daration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
-        Prismic component
+        Prismic component 1
       </motion.h2>
       <motion.div
         initial={{ opacity: 0, x: -500 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ daration: 0.5, delay: 0.3 }}
-        className="w-11/12 max-w-5xl text-center mx-auto h-screen flex flex-col items-center justify-center"
+        className="w-11/12 max-w-9xl text-center mx-auto h-screen flex flex-col items-center justify-center mt-20"
       >
         <SliceZone slices={data.data.slices} components={components} />
+      </motion.div>
+
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ daration: 0.5, delay: 0.5 }}
+        className="text-center text-5xl font-Ovo mt-20"
+      >
+        Prismic component 2
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, x: -500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ daration: 0.5, delay: 0.3 }}
+        className="w-11/12 max-w-9xl text-center mx-auto h-screen flex flex-col items-center justify-center"
+      >
+        <SliceZone slices={rightData.data.slices} components={components} />
       </motion.div>
     </motion.div>
   );
