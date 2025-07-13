@@ -60,9 +60,7 @@ const Contact = () => {
         transition={{ daration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk sdh kjdskhg jksdh
-        kjsdjk h gshdk gjkdsh kg sd ghdsfjkhg ksdh jk gjksdh kgjdshjk kg skdg
-        hjndskh k
+        This is my email address. You can contact me, make plans for meals, have fun together, and also share your thoughts.
       </motion.p>
 
       <motion.form

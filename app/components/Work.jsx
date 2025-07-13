@@ -35,9 +35,8 @@ const Work = ({ isDarkMode }) => {
         transition={{ daration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk sdh kjdskhg jksdh
-        kjsdjk h gshdk gjkdsh kg sd ghdsfjkhg ksdh jk gjksdh kgjdshjk kg skdg
-        hjndskh k
+        Tomorrow will be clearer Until one day, cherish what you have Afraid of
+        no longer being bound Let go of the first step of helplessness
       </motion.p>
 
       <motion.div

@@ -24,7 +24,7 @@ const Header = () => {
           transition={{ daration: 0.6, delay: 0.3 }}
           className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"
         >
-          Hi! I'm tyz <Image src={assets.hand_icon} alt="" className="w-6" />
+          Hi! I'm Tian Yunzheng <Image src={assets.hand_icon} alt="" className="w-6" />
         </motion.h3>
         <motion.h1
           initial={{ y: -30, opacity: 0 }}
@@ -32,7 +32,7 @@ const Header = () => {
           transition={{ daration: 0.8, delay: 0.5 }}
           className="text-3xl sm:text-6xl lg:text-[66px] foont-OOvoo"
         >
-          fsaaaafd sdafdsfgdsg gfgdsgfds dsafdsfd
+          Like playing table tennis and playing video games
         </motion.h1>
         <motion.p
           initial={{ y: -20, opacity: 0 }}
@@ -40,9 +40,7 @@ const Header = () => {
           transition={{ daration: 0.6, delay: 0.7 }}
           className="max-w-2xl mx-auto font-Ovo"
         >
-          fdsjlfdskj fdjsfjds dsljfd sfjdslfjds fsdjljfk lsdjfdsfjkldsjfk
-          fjdskfjdslf jdskl fjdlsj sdfjkl jfdlsjf sdjlfk sdjf lkdsjfklsdjksdakl
-          fd
+         Has a good coding style. Is good at constantly enriching oneself, improving one's innovation ability and professional skills. Has a cheerful personality and good interpersonal relationships. Possesses strong teamwork spirit and professional dedication. Calm and composed, takes matters seriously and responsibly.
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
           <motion.a

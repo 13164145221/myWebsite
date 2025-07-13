@@ -54,12 +54,10 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-5xl font-Ovo">
-            hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk sdh kjdskhg jksdh
-            kjsdjk h gshdk gjkdsh kg sd ghdsfjkhg ksdh jk gjksdh kgjdshjk kg
-            skdg hjndskh kgsdjkh ghsdnkh sdjk hjgds ksdsdjk hgdsjskjg dsk
-            sdljgkdjslk jgksdl hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk
-            gksdl hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk sdh kjdskhg
-            jksdh kjsdjk h gshdk
+            I am 27 years old this year. Previously, I worked at Guangzhou Wave
+            for 2 years, then returned to Wuhan for another 2 years. Before
+            that, I was involved in a lot of work, including backend management,
+            mini-programs, and website design.
           </p>
 
           <motion.ul

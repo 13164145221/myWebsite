@@ -59,10 +59,6 @@ export default function Home() {
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
-      <Work isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
       <motion.div
         initial={{ opacity: 0, x: -500 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -71,6 +67,10 @@ export default function Home() {
       >
         <SliceZone slices={data.data.slices} components={components} />
       </motion.div>
+      <Services isDarkMode={isDarkMode} />
+      <Work isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
     </>
   );
 }

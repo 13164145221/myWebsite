@@ -35,9 +35,10 @@ const Services = () => {
         transition={{ daration: 0.5, delay: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        hfjkadshfhjkdsahjkfdsjkhfkjkshkjfdskj fhjdsghkdsk sdh kjdskhg jksdh
-        kjsdjk h gshdk gjkdsh kg sd ghdsfjkhg ksdh jk gjksdh kgjdshjk kg skdg
-        hjndskh k
+        How much longer will this long night remain dark? The flickering
+        fluorescent lights are actually a kind of fireworks. Feeling the spring
+        breeze and summer rain hidden in the eyes, Just like this, we welcome
+        this rain. We have agreed to postpone and continue later.
       </motion.p>
 
       <motion.div
