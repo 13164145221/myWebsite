@@ -54,10 +54,10 @@ const Prismics = () => {
         Prismic component 1
       </motion.h2>
       <motion.div
-        initial={{ opacity: 0, x: -500 }}
+        initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ daration: 0.5, delay: 0.3 }}
-        className="w-11/12 max-w-9xl text-center mx-auto h-screen flex flex-col items-center justify-center mt-20"
+        className="w-11/12 max-w-9xl text-center mx-auto mt-20"
       >
         <SliceZone slices={data.data.slices} components={components} />
       </motion.div>
@@ -71,10 +71,10 @@ const Prismics = () => {
         Prismic component 2
       </motion.h2>
       <motion.div
-        initial={{ opacity: 0, x: 500 }}
+        initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ daration: 0.5, delay: 0.3 }}
-        className="w-11/12 max-w-9xl text-center mx-auto h-screen flex flex-col items-center justify-center"
+        className="w-11/12 max-w-9xl text-center mx-auto"
       >
         <SliceZone slices={rightData.data.slices} components={components} />
       </motion.div>
