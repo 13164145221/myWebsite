@@ -1,8 +1,11 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-*{
-  font-family:Outfit;
+@config "../tailwind.config.js";
+
+* {
+  font-family: Outfit;
+}
+
+.dark{
+  background-color: #000;
 }

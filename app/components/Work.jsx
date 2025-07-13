@@ -43,7 +43,7 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ daration: 0.9, delay: 0.6 }}
-        className="grid grid-cols-4 my-10 gap-5 dark:text-black"
+        className="grid grid-cols-auto my-10 gap-5 dark:text-black"
       >
         {workData.map((project, index) => (
           <motion.div

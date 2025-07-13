@@ -30,7 +30,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
         <Image src={assets.header_bg_color} alt="" className="w-full"/>
       </div>
 
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : "" }`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isDarkMode ?'dark':''} ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : "" }`}>
         <a href="#top">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
@@ -42,6 +42,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}>
           <li> <a className="font-Ovo" href="#top">Home</a></li>
           <li> <a className="font-Ovo" href="#about">About me</a></li>
+          <li> <a className="font-Ovo" href="#prismic">My prismic</a></li>
           <li> <a className="font-Ovo" href="#services">Services</a></li>
           <li> <a className="font-Ovo" href="#work">My Work</a></li>
           <li> <a className="font-Ovo" href="#contact">Contact me</a></li>
@@ -63,11 +64,10 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
 
 
       {/* moobile menu */}
-        <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white">
+        <ul ref={sideMenuRef} className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-whit ${isDarkMode ?'dark':''}`}>
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="" className="w-5 cursor-pointer"/>
           </div>
-
           <li> <a className="font-Ovo" onClick={closeMenu} href="#home">Home</a></li>
           <li> <a className="font-Ovo" onClick={closeMenu} href="#about">About me</a></li>
           <li> <a className="font-Ovo" onClick={closeMenu} href="#services">Services</a></li>
