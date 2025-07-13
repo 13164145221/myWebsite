@@ -63,7 +63,7 @@ const Prismics = () => {
       </motion.div>
 
       <motion.h2
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ daration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo mt-20"
@@ -71,7 +71,7 @@ const Prismics = () => {
         Prismic component 2
       </motion.h2>
       <motion.div
-        initial={{ opacity: 0, x: -500 }}
+        initial={{ opacity: 0, x: 500 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ daration: 0.5, delay: 0.3 }}
         className="w-11/12 max-w-9xl text-center mx-auto h-screen flex flex-col items-center justify-center"
